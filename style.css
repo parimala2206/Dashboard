@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://images.pexels.com/photos/2470655/pexels-photo-2470655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.main{
+  background-color: rgb(255 255 255 / 31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  backdrop-filter: blur(20px);
+}
+
+.transparent{
+    height: 80vh;
+    width: 65%;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.75), rgba(255,255,255,0.25));
+    /* Let's give it a border */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex ;
+}
+
+.left-side{
+    background: linear-gradient(to right bottom, rgba(215, 187, 213, 0.75), rgba(255,255,255,0.25));
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile{
+  margin: 2rem;
+}
+
+.info{
+    margin: 2rem 0;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;  
+}
+
+i{
+    color: plum;
+    margin-right: 10px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    flex: 2;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.project-cards{
+     background-color: rgba(215, 187, 213,0.6);      
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 22px rgba(175, 171, 171, 0.4);
+}
+
+.project-cards img{
+    border-radius: 5px;;
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+}
+
+small{
+    margin-top: 5px;
+}
+   
+.rate{
+    font-weight: bold;
+}
+
+progress {
+    border-radius: 7px; 
+    width: 100%;
+    height: 10px;  
+    margin-top: 10px; 
+  }
+  progress::-webkit-progress-bar {
+    background-color: rgb(224, 217, 224);
+    border-radius: 10px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #c799d5;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+  }
